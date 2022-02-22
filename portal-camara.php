@@ -8,10 +8,11 @@ Author: Urra Gauna Matias
 Author URI:[URL del autor del plugin]
 License:[El tipo de licencia que le quieras poner. Por ejemplo: GPL]
 */
-
-include(RAI_RUTA .'includes/funciones.php');
 defined('ABSPATH') or die("Bye bye");
-define('RAI_RUTA', plugin_dir_path(__FILE__));
+define('PCT_RUTA', plugin_dir_path(__FILE__));
+include(PCT_RUTA . 'includes/funciones.php');
+include(PCT_RUTA . 'includes/opciones.php');
+
 
 function pct_nuevosBotones($botones)
 {
